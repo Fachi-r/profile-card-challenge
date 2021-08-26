@@ -63,7 +63,7 @@ body{
 .card-background{
   position: absolute;
   top: 0;
-  background: url(/images/bg-pattern-card.svg);
+  background: url(https://fachi-r.github.io/profile-card-challenge/images/bg-pattern-card.svg);
   background-repeat: no-repeat;
   width: 100%;
 }
