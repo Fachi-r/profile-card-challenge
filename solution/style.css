@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+  /* Primary */
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-greyish-blue: hsl(227, 10%, 46%);
+  /* Neutral */
+  --dark-grey: hsl(0, 0%, 59%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark-desaturated-blue)
+}
+
+body{
+  display: grid;
+  place-items: center;
+
+  background-color: var(--dark-cyan);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.bg{
+  position: absolute;
+  width: 58.5rem;
+}
+.bg-top{
+  bottom: 35%;
+  right: 50%;
+}
+.bg-bottom{
+  top: 50%;
+  left: 48%;
+}
+
+.card{
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  border-radius: .8rem;
+
+  width: 19.4rem;
+  height: 20.5rem;
+  background: white;
+
+  box-shadow: 0px 10px 50px -5px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 13px 52px -4px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 13px 52px -4px rgba(0,0,0,0.2);
+
+  z-index: 2;
+}
+
+.card-background{
+  position: absolute;
+  top: 0;
+  background: url(/images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.image{
+  margin: 25% 0;
+  border: 6px solid white;
+  border-radius: 50%;
+}
+
+.card-header{
+  margin: 60% 0;
+}
+
+.stats{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  width: 100%;
+  border-top: 1px solid #dedede;
+  padding: 1.25rem 2rem;
+
+  position: absolute;
+  bottom: 0;
+}
+.stats span{
+  padding: .25rem 0;
+  font-size: .6rem;
+  letter-spacing: 1.5px;
+}
+/* Typography */
+span.age{
+  font-size: 18px !important;
+}
+span{
+  font-weight: 400;
+  color: var(--dark-grey);
+}
+.card-header span{
+  font-size: .8rem;
+}
+
+.attribution {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 11px; text-align: center;
+}
+.attribution a { 
+  font-size: 11px;
+  color: hsl(228, 45%, 44%); 
+}
